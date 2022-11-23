@@ -1,7 +1,7 @@
 body {
 	text-align: center;
 	margin: 30px;
-	/* background-color: black; */
+	background-color: black;
 }
 
 .board {
@@ -19,4 +19,12 @@ body {
 
 .cell:hover {
 	opacity: 0.9;
+}
+
+.purple-cell {
+	background-color: rgb(206, 176, 252);
+}
+
+.white-cell {
+	background-color: rgb(247, 242, 235);
 }
