@@ -28,3 +28,7 @@ body {
 .white-cell {
 	background-color: rgb(247, 242, 235);
 }
+
+.pawn {
+	background-color: red;
+}
