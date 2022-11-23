@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+	margin: 30px;
+	/* background-color: black; */
+}
+
+.board {
+	width: 400px;
+	height: 400px;
+	border: 5px solid rgb(0, 0, 0);
+}
+
+.cell {
+	height: 100px;
+	width: 100px;
+	border: 2px solid rgb(171, 171, 171);
+	border-style: inset;
+}
+
+.cell:hover {
+	opacity: 0.9;
+}
