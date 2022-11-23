@@ -2,14 +2,15 @@ var center = document.createElement('center')
 // board elements
 let chessBoard = document.createElement('board')
 
-for (let i = 0; i < 8; i++) {
+for (let y = 0; y < 8; y++) {
 	// creating tr
 	let row = document.createElement('tr')
-	for (let j = 0; j < 8; j++) {
+
+	for (let x = 0; x < 8; x++) {
 		// creating cell
 		let cell = document.createElement('td')
 		// white cells
-		if ((i + j) % 2 == 0) {
+		if ((y + x) % 2 == 0) {
 			// class attribute for all white cells
 			cell.setAttribute('class', 'cell white-cell')
 			row.appendChild(cell)
