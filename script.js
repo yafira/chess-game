@@ -4,24 +4,24 @@ var center = document.createElement('center')
 var chessBoard = document.createElement('board')
 for (var i = 0; i < 8; i++) {
 	// creating tr
-	var tr = document.createElement('tr')
+	var row = document.createElement('tr')
 	for (var j = 0; j < 8; j++) {
 		// creating cell
-		var td = document.createElement('td')
+		var cell = document.createElement('td')
 		// white cells
 		if ((i + j) % 2 == 0) {
 			// class attribute for all white cells
-			td.setAttribute('class', 'cell white-cell')
-			tr.appendChild(td)
+			cell.setAttribute('class', 'cell white-cell')
+			row.appendChild(cell)
 		}
 		// black cells
 		else {
-			td.setAttribute('class', 'cell purple-cell')
-			tr.appendChild(td)
+			cell.setAttribute('class', 'cell purple-cell')
+			row.appendChild(cell)
 		}
 	}
 	// append tr
-	chessBoard.appendChild(tr)
+	chessBoard.appendChild(row)
 }
 // append center to chess board
 center.appendChild(chessBoard)
