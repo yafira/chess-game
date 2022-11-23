@@ -1,13 +1,13 @@
 var center = document.createElement('center')
-
 // board elements
-var chessBoard = document.createElement('board')
-for (var i = 0; i < 8; i++) {
+let chessBoard = document.createElement('board')
+
+for (let i = 0; i < 8; i++) {
 	// creating tr
-	var row = document.createElement('tr')
-	for (var j = 0; j < 8; j++) {
+	let row = document.createElement('tr')
+	for (let j = 0; j < 8; j++) {
 		// creating cell
-		var cell = document.createElement('td')
+		let cell = document.createElement('td')
 		// white cells
 		if ((i + j) % 2 == 0) {
 			// class attribute for all white cells
