@@ -59,80 +59,9 @@ for (let y = 0; y < 8; y++) {
 		// creating cell
 		let cell = document.createElement('td')
 		cell.classList.add('cell')
-		// light chess pieces
-		if (boardArr[y][x] === 'light-pawn') {
-			cell.classList.add('light-pawn')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-rook') {
-			cell.classList.add('light-rook')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-rook2') {
-			cell.classList.add('light-rook2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-knight') {
-			cell.classList.add('light-knight')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-knight2') {
-			cell.classList.add('light-knight2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-bishop') {
-			cell.classList.add('light-bishop')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-bishop2') {
-			cell.classList.add('light-bishop2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-queen') {
-			cell.classList.add('light-queen')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'light-king') {
-			cell.classList.add('light-king')
-			// row.appendChild(cell)
-		}
-		// dark chess pieces
-		if (boardArr[y][x] === 'dark-pawn') {
-			cell.classList.add('dark-pawn')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-rook') {
-			cell.classList.add('dark-rook')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-rook2') {
-			cell.classList.add('dark-rook2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-knight') {
-			cell.classList.add('dark-knight')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-knight2') {
-			cell.classList.add('dark-knight2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-bishop') {
-			cell.classList.add('dark-bishop')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-bishop2') {
-			cell.classList.add('dark-bishop2')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-queen') {
-			cell.classList.add('dark-queen')
-			// row.appendChild(cell)
-		}
-		if (boardArr[y][x] === 'dark-king') {
-			cell.classList.add('dark-king')
-			// row.appendChild(cell)
-		}
+
+		// if it's not null, then show chess piece
+		if (boardArr[y][x]) cell.classList.add(boardArr[y][x])
 
 		// white cells
 		if ((y + x) % 2 == 0) {
