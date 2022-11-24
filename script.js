@@ -4,12 +4,30 @@ let chessBoard = document.createElement('board')
 // chessbaord array filling 64 spaces
 const boardArr = [
 	['rook', 'knight', 'bishop', 'queen', 'king', 'bishop', 'knight', 'rook'],
-	['pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn'],
+	[
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+		'light-pawn',
+	],
 	[null, null, null, null, null, null, null, null],
 	[null, null, null, null, null, null, null, null],
 	[null, null, null, null, null, null, null, null],
 	[null, null, null, null, null, null, null, null],
-	['pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn', 'pawn'],
+	[
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+		'dark-pawn',
+	],
 	['rook', 'knight', 'bishop', 'queen', 'king', 'bishop', 'knight', 'rook'],
 ]
 
@@ -24,8 +42,13 @@ for (let y = 0; y < 8; y++) {
 		let cell = document.createElement('td')
 		cell.classList.add('cell')
 
-		if (boardArr[y][x] === 'pawn') {
-			cell.classList.add('pawn')
+		if (boardArr[y][x] === 'light-pawn') {
+			cell.classList.add('light-pawn')
+			// row.appendChild(cell)
+		}
+
+		if (boardArr[y][x] === 'dark-pawn') {
+			cell.classList.add('dark-pawn')
 			// row.appendChild(cell)
 		}
 		// white cells

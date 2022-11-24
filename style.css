@@ -29,6 +29,16 @@ body {
 	background-color: rgb(247, 242, 235);
 }
 
-.pawn {
-	background-color: red;
+.light-pawn,
+.dark-pawn {
+	/* background-color: red; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.light-pawn {
+	background-image: url(/assets/light-pawn.png);
+}
+
+.dark-pawn {
+	background-image: url(/assets/dark-pawn.png);
 }
