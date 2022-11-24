@@ -137,12 +137,12 @@ for (let y = 0; y < 8; y++) {
 		// white cells
 		if ((y + x) % 2 == 0) {
 			// class attribute for all white cells
-			cell.classList.add('white-cell')
+			cell.classList.add('light-cell')
 			row.appendChild(cell)
 		}
 		// black cells
 		else {
-			cell.classList.add('purple-cell')
+			cell.classList.add('dark-cell')
 			row.appendChild(cell)
 		}
 	}
