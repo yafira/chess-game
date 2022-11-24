@@ -149,10 +149,5 @@ for (let y = 0; y < 8; y++) {
 	// append tr
 	chessBoard.appendChild(row)
 }
-// append center to chess board
 center.appendChild(chessBoard)
-
-// modifying chess board attribute properties
-chessBoard.setAttribute('cellspacing', '0')
-chessBoard.setAttribute('width', '270px')
 document.body.appendChild(center)
