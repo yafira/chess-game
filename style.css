@@ -1,7 +1,7 @@
 body {
 	text-align: center;
 	margin: 30px;
-	/* background-color: black; */
+	background-color: black;
 }
 
 .board {
@@ -30,15 +30,78 @@ body {
 }
 
 .light-pawn,
-.dark-pawn {
+.light-rook,
+.light-rook2,
+.light-knight,
+.light-knight2,
+.light-bishop,
+.light-bishop2,
+.light-queen,
+.light-king,
+.dark-pawn,
+.dark-rook,
+.dark-rook2,
+.dark-knight,
+.dark-knight2,
+.dark-bishop,
+.dark-bishop2,
+.dark-queen,
+.dark-king {
 	/* background-color: red; */
 	background-repeat: no-repeat;
 	background-position: center;
 }
+/* light chess pieces */
 .light-pawn {
 	background-image: url(/assets/light-pawn.png);
 }
 
+.light-rook,
+.light-rook2 {
+	background-image: url(/assets/light-rook.png);
+}
+
+.light-knight,
+.light-knight2 {
+	background-image: url(/assets/light-knight.png);
+}
+
+.light-bishop,
+.light-bishop2 {
+	background-image: url(/assets/light-bishop.png);
+}
+
+.light-queen {
+	background-image: url(/assets/light-queen.png);
+}
+
+.light-king {
+	background-image: url(/assets/light-king.png);
+}
+/* dark chess pieces */
 .dark-pawn {
 	background-image: url(/assets/dark-pawn.png);
+}
+
+.dark-rook,
+.dark-rook2 {
+	background-image: url(/assets/dark-rook.png);
+}
+
+.dark-knight,
+.dark-knight2 {
+	background-image: url(/assets/dark-knight.png);
+}
+
+.dark-bishop,
+.dark-bishop2 {
+	background-image: url(/assets/dark-bishop.png);
+}
+
+.dark-queen {
+	background-image: url(/assets/dark-queen.png);
+}
+
+.dark-king {
+	background-image: url(/assets/dark-king.png);
 }
